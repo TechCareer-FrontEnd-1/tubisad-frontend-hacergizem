@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #ff33ae;
+  height: 30vh;
+}
+
+input {
+  height: 34px;
+}
+
+.btn {
+  color: white;
+  background-color: #ff33ae;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  width: 75px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: white;
+  border: 2px solid #ff33ae;
+  color: #ff33ae;
+  font-weight: 500;
+}
+
+.btn-small {
+  width: 30px;
+  margin: 0;
+  margin-left: 5px;
+  background-color: transparent;
+  color: #ff33ae;
+}
+
+.white-area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-duty {
+  min-width: 40%;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: absolute;
+  top: -50px;
+  background-color: white;
+}
+.add-new-duty .new-task-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.add-new-duty label {
+  margin-bottom: 10px;
+}
+
+.todos {
+  border-radius: 5px;
+  margin-top: 100px;
+  border: 1px solid #eaeaea;
+  min-width: 40%;
+}
+.todos:last-child {
+  border-bottom: none;
+}
+
+#todoItemHeader {
+  width: 70%;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+@media screen and (max-width: 900px) {
+  .add-new-duty {
+    min-width: 80%;
+  }
+  #todoItemHeader {
+    width: 50%;
+  }
+  .todos {
+    min-width: 80%;
+  }
+}

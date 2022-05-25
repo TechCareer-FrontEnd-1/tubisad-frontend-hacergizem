@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header"></header>
+    <section class="white-area">
+        <form class="add-new-duty" action="#">
+            <div class="new-task-input">
+                <label for="addTask">New Task</label>
+                <input type="text" name="addTask" id="addTask" required>
+            </div>
+            <input class="btn" type="submit" value="Add">
+        </form>
+
+        <div class="todos">
+            <form class="todo-item">
+                <label for="todoItemHeader">Edit:</label>
+                <input type="text" placeholder="Sample" name="todoItemHeader" id="todoItemHeader" required>
+                <input class="btn btn-primary" type="submit" value="Save">
+            </form>
+            <div class="todo-item">
+                <input type="checkbox" name="todoItem" id="todoItem">
+                <label for="todoItem">Vacuum the carpet</label>
+                <div>
+                    <button class="btn btn-small"><i class="fa-solid fa-pencil"></i></button>
+                    <button class="btn btn-small"><i class="fa-regular fa-trash-can"></i></button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
